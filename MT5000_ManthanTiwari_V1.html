@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.550">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Manthan Tiwari">
+
+<title>Mapping Economic Impact: A Global View of Child Deprivation and Prosperity</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="MT5000_ManthanTiwari_V1_files/libs/clipboard/clipboard.min.js"></script>
+<script src="MT5000_ManthanTiwari_V1_files/libs/quarto-html/quarto.js"></script>
+<script src="MT5000_ManthanTiwari_V1_files/libs/quarto-html/popper.min.js"></script>
+<script src="MT5000_ManthanTiwari_V1_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="MT5000_ManthanTiwari_V1_files/libs/quarto-html/anchor.min.js"></script>
+<link href="MT5000_ManthanTiwari_V1_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="MT5000_ManthanTiwari_V1_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="MT5000_ManthanTiwari_V1_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="MT5000_ManthanTiwari_V1_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="MT5000_ManthanTiwari_V1_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="MT5000_ManthanTiwari_V1_files/libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+<script src="MT5000_ManthanTiwari_V1_files/libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="MT5000_ManthanTiwari_V1_files/libs/plotly-binding-4.10.4/plotly.js"></script>
+<script src="MT5000_ManthanTiwari_V1_files/libs/typedarray-0.1/typedarray.min.js"></script>
+<script src="MT5000_ManthanTiwari_V1_files/libs/jquery-3.5.1/jquery.min.js"></script>
+<link href="MT5000_ManthanTiwari_V1_files/libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+<script src="MT5000_ManthanTiwari_V1_files/libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+<link href="MT5000_ManthanTiwari_V1_files/libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="MT5000_ManthanTiwari_V1_files/libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Mapping Economic Impact: A Global View of Child Deprivation and Prosperity</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Manthan Tiwari </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="abstract" class="level1">
+<h1>Abstract:</h1>
+<p>This report explores the relationship between economic indicators and child deprivation across various countries. Utilizing data from two key sources—unicef_indicator_1.xlsx and unicef_metadata.xlsx—the analysis is presented through a series of visualizations that illustrate global patterns and trends. These insights aim to inform policymakers and stakeholders, providing a data-driven foundation for targeted interventions to improve child welfare globally.</p>
+</section>
+<section id="introduction" class="level1">
+<h1>Introduction:</h1>
+<p>Child deprivation is a critical issue that affects future generations’ educational outcomes, health, and overall well-being. Understanding the economic factors that correlate with child deprivation can help tailor effective policies. This report uses comprehensive datasets from UNICEF to examine the linkage between GDP per capita and child deprivation rates worldwide.</p>
+</section>
+<section id="data-description" class="level1">
+<h1>Data Description:</h1>
+<p>The analysis is based on two primary data sources:</p>
+<p>unicef_indicator_1.xlsx: Contains data on child deprivation rates, detailing the percentage of children suffering from educational, nutritional, or welfare inadequacies in various countries. unicef_metadata.xlsx: Provides broader economic and demographic indicators such as GDP per capita, population totals, and life expectancy.</p>
+<section id="visualization-1-world-map-chart" class="level2">
+<h2 class="anchored" data-anchor-id="visualization-1-world-map-chart">Visualization 1: World Map Chart</h2>
+<section id="narrative" class="level4">
+<h4 class="anchored" data-anchor-id="narrative">Narrative:</h4>
+<p>This world map vividly illustrates the prevalence of <strong>child deprivation across different nations</strong>, highlighting regions with the <strong>highest and lowest percentages</strong>. By visualizing <strong>deprivation data geographically,</strong> we can immediately identify <strong>global patterns and hotspots</strong> where interventions are most needed. This map sets the stage for a deeper exploration into what drives these patterns, particularly the role of economic factors.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="MT5000_ManthanTiwari_V1_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="visualization-2-bar-chart" class="level2">
+<h2 class="anchored" data-anchor-id="visualization-2-bar-chart">Visualization 2: Bar Chart</h2>
+<section id="title-top-10-countries-by-gdp-per-capita-in-2017" class="level4">
+<h4 class="anchored" data-anchor-id="title-top-10-countries-by-gdp-per-capita-in-2017">Title: Top 10 Countries by GDP per Capita in 2017</h4>
+</section>
+<section id="narrative-1" class="level4">
+<h4 class="anchored" data-anchor-id="narrative-1">Narrative:</h4>
+<p>Focusing on economic prosperity, this bar chart ranks the <strong>top 10 countries by GDP per capita in 2017.</strong> It reveals a snapshot of <strong>economic health in the wealthiest nations</strong>, providing a stark contrast to the child deprivation rates seen in the map. This comparison raises questions about the distribution of wealth and its impact on societal well-being, prompting us to look closer at individual countries where economic growth may not equate to reduced child deprivation.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="MT5000_ManthanTiwari_V1_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="visualization-3-scatter-plot-with-linear-regression-line" class="level2">
+<h2 class="anchored" data-anchor-id="visualization-3-scatter-plot-with-linear-regression-line">Visualization 3: Scatter-plot with Linear Regression Line</h2>
+<section id="title-child-deprivation-vs.-gdp-per-capita-2017" class="level4">
+<h4 class="anchored" data-anchor-id="title-child-deprivation-vs.-gdp-per-capita-2017">Title: Child Deprivation vs.&nbsp;GDP Per Capita (2017)</h4>
+</section>
+<section id="narrative-2" class="level4">
+<h4 class="anchored" data-anchor-id="narrative-2">Narrative:</h4>
+<p>Delving into the relationship between <strong>economic output</strong> and <strong>child welfare</strong>, this scatterplot with a linear regression line examines how <strong>GDP per capita</strong> correlates with child deprivation percentages across countries. The trend line offers a statistical backbone to our observations, highlighting whether higher economic output generally corresponds to lower levels of child deprivation, or if the reality is more complex.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="MT5000_ManthanTiwari_V1_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="visualization-4-time-series-chart" class="level2">
+<h2 class="anchored" data-anchor-id="visualization-4-time-series-chart">Visualization 4: Time-Series Chart</h2>
+<section id="title-gdp-per-capita-over-time-in-india" class="level4">
+<h4 class="anchored" data-anchor-id="title-gdp-per-capita-over-time-in-india">Title: GDP Per Capita Over Time in India</h4>
+</section>
+<section id="narrative-3" class="level4">
+<h4 class="anchored" data-anchor-id="narrative-3">Narrative:</h4>
+<p>Zooming into India, this time-series chart tracks GDP per capita over several decades, illustrating the trajectory of economic growth. By examining one country in detail, we can discuss the nuances of economic reforms, development policies, and their timings relative to changes in child welfare metrics. It provides a longitudinal perspective, crucial for understanding long-term impacts.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="MT5000_ManthanTiwari_V1_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="visualization-5-interactive-plots" class="level2">
+<h2 class="anchored" data-anchor-id="visualization-5-interactive-plots">Visualization 5: Interactive Plots</h2>
+<section id="title-explore-the-data-interactive-analysis-of-gdp-and-child-deprivation" class="level4">
+<h4 class="anchored" data-anchor-id="title-explore-the-data-interactive-analysis-of-gdp-and-child-deprivation">Title: Explore the Data: Interactive Analysis of GDP and Child Deprivation</h4>
+</section>
+<section id="narrative-4" class="level4">
+<h4 class="anchored" data-anchor-id="narrative-4">Narrative:</h4>
+<p>This interactive plot invites users to engage directly with the data, exploring relationships between GDP, child deprivation, and other variables like population size. By interacting with the plot, users can select specific countries or years, dive into the details, and form their own hypotheses about the data. It’s a tool for discovery and education, enabling a personal journey through the data where each user can draw unique insights.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-395619600f245cc91f46" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-395619600f245cc91f46">{"x":{"visdat":{"88f997e04e":["function () ","plotlyVisDat"]},"cur_data":"88f997e04e","attrs":{"88f997e04e":{"x":{},"y":{},"mode":"markers","marker":{"size":10,"color":"rgba(255, 182, 193, .9)","line":{"color":"rgba(152, 0, 0, .8)","width":2}},"text":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Interactive Scatter Plot of GDP vs Child Deprivation","xaxis":{"domain":[0,1],"automargin":true,"title":"GDP_per_capita"},"yaxis":{"domain":[0,1],"automargin":true,"title":"Child_Deprivation"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[4249.8200493984996,4249.8200493984996,4249.8200493984996,3666.1418221090498,3666.1418221090498,3666.1418221090498,3217.33924430561,3217.33924430561,3217.33924430561,1173.89299995344,1173.89299995344,1173.89299995344,282.975966580511,282.975966580511,282.975966580511,1072.3620320012101,1072.3620320012101,1072.3620320012101,6098.6000795897598,6098.6000795897598,6098.6000795897598,441.01297826986598,441.01297826986598,441.01297826986598,2481.3017928188601,2481.3017928188601,2481.3017928188601,1520.34230282865,1520.34230282865,1520.34230282865,1445.26777131721,1445.26777131721,1445.26777131721,12470.957420810801,12470.957420810801,12470.957420810801,6120.9911643647001,6120.9911643647001,6120.9911643647001,4025.64148367191,4025.64148367191,4025.64148367191,3301.20444348201,3301.20444348201,3301.20444348201,671.29057585957605,671.29057585957605,671.29057585957605,6840.9486124671403,6840.9486124671403,6840.9486124671403,1715.8239629986899,1715.8239629986899,1715.8239629986899,645.93818715158795,645.93818715158795,645.93818715158795,910.65264192259804,910.65264192259804,910.65264192259804,3903.05196634916,3903.05196634916,3903.05196634916,566.53557863006097,566.53557863006097,566.53557863006097,5659.0818027222904,5659.0818027222904,5659.0818027222904,2124.18751643212,2124.18751643212,2124.18751643212,1411.1431102563699,1411.1431102563699,1411.1431102563699,1590.17433135955,1590.17433135955,1590.17433135955,4710.9761487084097,4710.9761487084097,4710.9761487084097,1457.5430655441301,1457.5430655441301,1457.5430655441301,1197.61057510002,1197.61057510002,1197.61057510002,1109.3756527159601,1109.3756527159601,1109.3756527159601,1459.7939618806699,1459.7939618806699,1459.7939618806699,1307.97303071376,1307.97303071376,1307.97303071376,2358.3726639752199,2358.3726639752199,2358.3726639752199,723.95918426021001,723.95918426021001,723.95918426021001,1092.09426551971,1092.09426551971,1092.09426551971,470.42389826686502,470.42389826686502,470.42389826686502,767.57159552185897,767.57159552185897,767.57159552185897,1159.3402007453301,1159.3402007453301,1159.3402007453301,4242.3002215750803,4242.3002215750803,4242.3002215750803,1562.72683648828,1562.72683648828,1562.72683648828,9688.2482882058703,9688.2482882058703,9688.2482882058703,544.27687274183597,544.27687274183597,544.27687274183597,10098.1731805195,10098.1731805195,10098.1731805195,512.45639534593295,512.45639534593295,512.45639534593295,460.03223661756101,460.03223661756101,460.03223661756101,2512.08047529121,2512.08047529121,2512.08047529121,878.15038851681402,878.15038851681402,878.15038851681402,5701.60432063189,5701.60432063189,5701.60432063189,2575.0675120414098,2575.0675120414098,2575.0675120414098,1542.9040710768199,1542.9040710768199,1542.9040710768199,6025.0967689045201,6025.0967689045201,6025.0967689045201,690.45569703950798,690.45569703950798,690.45569703950798,611.08399480740104,611.08399480740104,611.08399480740104,1339.56800117839,1339.56800117839,1339.56800117839,8751.1076020461296,8751.1076020461296,8751.1076020461296,1296.5115983697599,1296.5115983697599,1296.5115983697599,3686.0955619178299,3686.0955619178299,3686.0955619178299,3530.36090389521,3530.36090389521,3530.36090389521,777.93568108027705,777.93568108027705,777.93568108027705,748.73451019525396,748.73451019525396,748.73451019525396,5708.79409105798,5708.79409105798,5708.79409105798,1060.9968767062701,1060.9968767062701,1060.9968767062701,1346.55035566335,1346.55035566335,1346.55035566335,6208.2966545015997,6208.2966545015997,6208.2966545015997,4070.1498157184001,4070.1498157184001,4070.1498157184001,929.7998046875,929.7998046875,929.7998046875,875.79625312025405,875.79625312025405,875.79625312025405,2188.6171982084802,2188.6171982084802,2188.6171982084802,6185.74604725477,6185.74604725477,6185.74604725477,1331.4492443552499,1331.4492443552499,1331.4492443552499,1410.3291734890799,1410.3291734890799,1410.3291734890799],"y":[7.6549162864684996,6.5613946914672798,7.1011719703674299,4.0344653129577601,3.8331985473632799,4.2108349800109801,51.988037109375,52.524578094482401,52.2583808898925,24.544776916503899,23.8780708312988,24.211492538452099,24.056627273559499,23.789176940917901,24.3286952972412,69.446754455566406,69.546592712402301,69.349761962890597,15.977835655212401,16.875225067138601,16.4135417938232,40.8324584960937,41.608249664306598,40.053962707519503,30.605852127075099,30.689121246337798,30.521976470947202,45.442733764648402,47.7793769836425,46.593616485595703,29.047714233398398,27.429014205932599,28.235328674316399,2.7560369968414302,2.5305643081664999,2.6400771141052202,14.192444801330501,13.2116689682006,15.1713705062866,16.066301345825099,16.602348327636701,16.341026306152301,12.1244392395019,12.060386657714799,12.093639373779199,72.983589172363196,73.137809753417898,73.283386230468693,19.590499877929599,19.385545730590799,19.7862434387207,50.4795532226562,47.182300567626903,48.862499237060497,17.4855232238769,20.258893966674801,18.850383758544901,45.5001831054687,47.242710113525298,43.764369964599602,39.589771270751903,40.398082733154297,38.798164367675703,36.976837158203097,38.666755676269503,37.804729461669901,13.9881572723388,14.672181129455501,13.315404891967701,32.044700622558501,32.7589721679687,32.413665771484297,42.96968460083,44.784824371337798,43.894142150878899,59.3909492492675,60.244712829589801,61.163665771484297,24.724571228027301,22.247474670410099,23.4481506347656,46.352146148681598,46.922012329101499,46.638946533203097,11.772290229797299,12.412540435791,11.0891828536987,72.521392822265597,71.844665527343693,71.145957946777301,52.542507171630803,53.739490509033203,53.120029449462798,26.152645111083899,24.871616363525298,25.520671844482401,49.126918792724602,49.2959785461425,49.209709167480398,62.825248718261697,62.844890594482401,62.835289001464801,48.054286956787102,47.756690979003899,48.3555488586425,71.266906738281193,71.232658386230398,71.249526977539006,43.470344543457003,41.796230316162102,42.620754241943303,45.660594940185497,45.962333679199197,45.367771148681598,27.329524993896399,27.653203964233398,27.496080398559499,64.365325927734304,64.886283874511705,64.628944396972599,8.63618659973144,9.6777935028076101,9.1741313934326101,24.695436477661101,24.835147857666001,24.974704742431602,16.399406433105401,17.1242370605468,15.6718788146972,59.117580413818303,60.020748138427699,59.5748901367187,83.819931030273395,83.130287170410099,83.468254089355398,50.426876068115199,50.000091552734297,50.210578918457003,32.788475036621001,30.545475006103501,31.663454055786101,18.759746551513601,18.4989509582519,18.625778198242099,54.403308868408203,54.499309539794901,54.453907012939403,53.656608581542898,51.1911010742187,52.424766540527301,12.545280456542899,11.165554046630801,11.8380517959594,25.384323120117099,27.41868019104,26.399923324584901,40.8893013000488,41.947536468505803,41.419376373291001,37.959571838378899,39.4573554992675,38.701358795166001,16.480115890502901,15.273616790771401,15.8620748519897,55.512138366699197,57.043788909912102,56.266826629638601,21.3006172180175,21.492914199829102,21.118808746337798,32.156303405761697,33.734947204589801,32.955417633056598,81.306480407714801,79.602043151855398,80.437164306640597,68.102714538574205,69.056228637695298,68.588294982910099,8.6052370071411097,8.7857418060302699,8.6971788406371999,30.136051177978501,29.612529754638601,29.8681735992431,37.9108276367187,39.136386871337798,38.542915344238203,5.7619147300720197,5.5352916717529297,5.6451287269592196,8.84826564788818,9.3463048934936506,9.1026048660278303,36.644294738769503,39.466438293457003,38.060337066650298,35.211334228515597,35.181346893310497,35.196285247802699,57.651573181152301,54.532779693603501,56.062210083007798,17.498144149780199,17.127950668334901,17.308435440063398,38.7619018554687,40.504123687744098,39.624256134033203,39.560134887695298,41.870372772216797,40.718952178955],"mode":"markers","marker":{"color":"rgba(255, 182, 193, .9)","size":10,"line":{"color":"rgba(152, 0, 0, .8)","width":2}},"text":["Country: Albania","Country: Albania","Country: Albania","Country: Armenia","Country: Armenia","Country: Armenia","Country: Angola","Country: Angola","Country: Angola","Country: Bangladesh","Country: Bangladesh","Country: Bangladesh","Country: Burundi","Country: Burundi","Country: Burundi","Country: Benin","Country: Benin","Country: Benin","Country: Belize","Country: Belize","Country: Belize","Country: Congo, the Democratic Republic of the","Country: Congo, the Democratic Republic of the","Country: Congo, the Democratic Republic of the","Country: Congo","Country: Congo","Country: Congo","Country: Ivory Coast","Country: Ivory Coast","Country: Ivory Coast","Country: Cameroon","Country: Cameroon","Country: Cameroon","Country: Costa Rica","Country: Costa Rica","Country: Costa Rica","Country: Dominican Republic","Country: Dominican Republic","Country: Dominican Republic","Country: Algeria","Country: Algeria","Country: Algeria","Country: Egypt","Country: Egypt","Country: Egypt","Country: Ethiopia","Country: Ethiopia","Country: Ethiopia","Country: Gabon","Country: Gabon","Country: Gabon","Country: Ghana","Country: Ghana","Country: Ghana","Country: Gambia","Country: Gambia","Country: Gambia","Country: Guinea","Country: Guinea","Country: Guinea","Country: Guatemala","Country: Guatemala","Country: Guatemala","Country: Guinea-Bissau","Country: Guinea-Bissau","Country: Guinea-Bissau","Country: Guyana","Country: Guyana","Country: Guyana","Country: Honduras","Country: Honduras","Country: Honduras","Country: Haiti","Country: Haiti","Country: Haiti","Country: India","Country: India","Country: India","Country: Iraq","Country: Iraq","Country: Iraq","Country: Kenya","Country: Kenya","Country: Kenya","Country: Kyrgyzstan","Country: Kyrgyzstan","Country: Kyrgyzstan","Country: Cambodia","Country: Cambodia","Country: Cambodia","Country: Kiribati","Country: Kiribati","Country: Kiribati","Country: Comoros","Country: Comoros","Country: Comoros","Country: Lao People's Democratic Republic","Country: Lao People's Democratic Republic","Country: Lao People's Democratic Republic","Country: Liberia","Country: Liberia","Country: Liberia","Country: Lesotho","Country: Lesotho","Country: Lesotho","Country: Madagascar","Country: Madagascar","Country: Madagascar","Country: Mali","Country: Mali","Country: Mali","Country: Burma","Country: Burma","Country: Burma","Country: Mongolia","Country: Mongolia","Country: Mongolia","Country: Mauritania","Country: Mauritania","Country: Mauritania","Country: Maldives","Country: Maldives","Country: Maldives","Country: Malawi","Country: Malawi","Country: Malawi","Country: Mexico","Country: Mexico","Country: Mexico","Country: Mozambique","Country: Mozambique","Country: Mozambique","Country: Niger","Country: Niger","Country: Niger","Country: Nigeria","Country: Nigeria","Country: Nigeria","Country: Nepal","Country: Nepal","Country: Nepal","Country: Peru","Country: Peru","Country: Peru","Country: Papua New Guinea","Country: Papua New Guinea","Country: Papua New Guinea","Country: Pakistan","Country: Pakistan","Country: Pakistan","Country: Paraguay","Country: Paraguay","Country: Paraguay","Country: Rwanda","Country: Rwanda","Country: Rwanda","Country: Sierra Leone","Country: Sierra Leone","Country: Sierra Leone","Country: Senegal","Country: Senegal","Country: Senegal","Country: Suriname","Country: Suriname","Country: Suriname","Country: Sao Tome and Principe","Country: Sao Tome and Principe","Country: Sao Tome and Principe","Country: El Salvador","Country: El Salvador","Country: El Salvador","Country: Swaziland","Country: Swaziland","Country: Swaziland","Country: Chad","Country: Chad","Country: Chad","Country: Togo","Country: Togo","Country: Togo","Country: Thailand","Country: Thailand","Country: Thailand","Country: Tajikistan","Country: Tajikistan","Country: Tajikistan","Country: Timor-Leste","Country: Timor-Leste","Country: Timor-Leste","Country: Turkmenistan","Country: Turkmenistan","Country: Turkmenistan","Country: Tunisia","Country: Tunisia","Country: Tunisia","Country: Tanzania, United Republic of","Country: Tanzania, United Republic of","Country: Tanzania, United Republic of","Country: Uganda","Country: Uganda","Country: Uganda","Country: Yemen","Country: Yemen","Country: Yemen","Country: South Africa","Country: South Africa","Country: South Africa","Country: Zambia","Country: Zambia","Country: Zambia","Country: Zimbabwe","Country: Zimbabwe","Country: Zimbabwe"],"type":"scatter","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion:</h2>
+<p>Through these visualizations, our narrative bridges the gap between macroeconomic indicators and their human implications, offering a comprehensive view that connects economic health with child welfare outcomes. By understanding these relationships, policymakers, researchers, and the global community can better target interventions and policies to reduce child deprivation effectively.</p>
+<p>This cohesive storyline, supported by diverse visual representations, not only informs but also empowers stakeholders to take informed action based on a clear understanding of where and how economic factors intersect with the lives of children around the world.</p>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

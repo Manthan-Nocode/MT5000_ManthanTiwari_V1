@@ -1,0 +1,32 @@
+---
+title: "Scatterplot"
+author: "Manthan Tiwari"
+format: html
+editor: visual
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+source("main.r")
+```
+
+You can add options to executable code like this
+
+```{r}
+plot_data <- combined_data %>%
+  filter(year == 2017)
+
+ggplot(plot_data, aes(x = GDP_per_capita, y = Child_Deprivation)) +
+  geom_point(aes(color = Country)) +
+  geom_smooth(method = "lm", se = FALSE, color = "red") +
+  labs(title = "Child Deprivation vs. GDP per Capita (2017)", x = "GDP per Capita", y = "Deprivation %")
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).

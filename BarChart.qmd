@@ -1,0 +1,33 @@
+---
+title: "BarChart"
+format: html
+editor: visual
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+
+## Running Code
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+source("main.r")
+```
+
+You can add options to executable code like this
+
+```{r}
+selected_countries <- combined_data %>%
+  filter(year == 2017) %>%
+  arrange(desc(GDP_per_capita)) %>%
+  top_n(10, GDP_per_capita)
+
+ggplot(selected_countries, aes(x = reorder(Country, GDP_per_capita), y = GDP_per_capita)) +
+  geom_bar(stat = "identity", fill = "steelblue") +
+  coord_flip() +
+  labs(title = "Top 10 Countries by GDP per Capita in 2017", x = "Country", y = "GDP per capita (US$)")
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
